@@ -4,6 +4,7 @@
     <HeroCarousel />
     <AboutSection />
     <CounterSection />
+    <OutProjects />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ export default {
     HeroCarousel: () => import("@/views/components/HeroCarousel.vue"),
     AboutSection: () => import("@/views/components/AboutSection.vue"),
     CounterSection: () => import("@/views/components/CounterSection.vue"),
+    OutProjects: () => import("@/views/components/OutProjects.vue"),
   },
 };
 </script>
