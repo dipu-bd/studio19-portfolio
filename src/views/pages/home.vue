@@ -1,14 +1,14 @@
 <template>
-  <HelloWorld />
+  <div>
+    <HeroCarousel />
+  </div>
 </template>
 
 <script>
-import HelloWorld from "@/views/components/HelloWorld.vue";
-
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    HeroCarousel: () => import("@/views/components/HeroCarousel.vue"),
   },
 };
 </script>
