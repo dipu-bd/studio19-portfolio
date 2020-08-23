@@ -10,7 +10,7 @@
     touch
   >
     <v-carousel-item v-for="(slide, i) in slides" :src="slide.image" :key="i">
-      <v-card width="400">
+      <v-card width="400" elevation="5">
         <v-card-title>Dream Heaven City</v-card-title>
         <v-card-text>
           If you are looking at blank cassettes on the web Lorem ipsum dolor sit amet, consectetur
@@ -52,7 +52,7 @@ export default {
 
   .v-card {
     position: absolute;
-    bottom: 100px;
+    bottom: 120px;
     right: 100px;
     border-radius: 0;
     padding: 20px;
@@ -92,6 +92,8 @@ export default {
       left: 10px;
       top: -10px;
       z-index: 1;
+      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     }
 
     &:before {
@@ -106,6 +108,8 @@ export default {
       bottom: -28px;
       transform: rotate(180deg);
       z-index: 1;
+      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     }
 
     &:after {
@@ -118,6 +122,8 @@ export default {
       clip-path: polygon(58% 0, 65% 6%, 94% 6%, 94% 38%, 100% 43%, 100% 100%, 0 100%, 0 0);
       background: rgba(#262533, 0.96);
       z-index: -1;
+      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     }
   }
 }
