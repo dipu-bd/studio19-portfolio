@@ -1,5 +1,28 @@
 export default [
   {
+    image: "content/projects/Architecture/University/4.jpg",
+    title: "Capital University Of Bangladesh",
+    details: `
+        <b>Type</b>: Educational Institute <br>
+        <b>Location</b>: Chuadanga Sadar, Chuadanga, Bangladesh <br>
+        <b>Client</b>: First Capital University Of Bangladesh <br>
+        <b>Size</b>: 16.52 Acres  <br>
+        <b>Status</b>: On Going Project <br>
+        <b>Project Concept</b>: Freedom of Thinking
+      `,
+  },
+  {
+    image: "content/projects/Architecture/Ceo Basha Gate/3.jpg",
+    title: "Entry Gate of Zilla Parishad CEO",
+    details: `
+        <b>Type</b>: Gate and Boundary <br>
+        <b>Location</b>: Moulvibazara Sadar, Moulvibazar, Bangladesh <br>
+        <b>Client</b>: Zilla Parishad, Moulvibazar <br>
+        <b>Size</b>: 90 Feet Long <br>
+        <b>Status</b>: Completed
+      `,
+  },
+  {
     image: "content/projects/Architecture/Madrasa/2.jpg",
     title: "Patch Komlapur Madrasa",
     details: `
@@ -8,18 +31,7 @@ export default [
         <b>Client</b>: Shahed Group <br>
         <b>Size</b>: 1.6 Acres <br>
         <b>Status</b>: Completed <br>
-        <b>Project Concept</b>: Feeling Like Home <br>
-      `,
-  },
-  {
-    image: "content/projects/Architecture/Bongabondhu Uddyan/3.jpg",
-    title: "Bongabondhu Uddyan in Kulaura",
-    details: `
-        <b>Type</b>: Cultural Complex <br>
-        <b>Location</b>: Kulaura, Moulvibazar, Bangladesh <br>
-        <b>Client</b>: Zilla Parishad, Moulvibazar, Bangladesh <br>
-        <b>Size</b>: 15500 Square feet <br>
-        <b>Status</b>: Proposed <br>
+        <b>Project Concept</b>: Feeling Like Home
       `,
   },
   {
@@ -31,7 +43,7 @@ export default [
         <b>Size</b>: 0.4 Acres <br>
         <b>Status</b>: On Going project <br>
         <b>Client</b>: Private <br>
-        <b>Project Concept</b>: Back to the Root <br>
+        <b>Project Concept</b>: Back to the Root
       `,
   },
   {
@@ -43,7 +55,7 @@ export default [
         <b>Client</b>: Daily Somoyer Somikoron <br>
         <b>Size</b>: 1200 Square Feet <br>
         <b>Status</b>: On Going Project <br>
-        <b>Project Concept</b>: Progression <br>
+        <b>Project Concept</b>: Progression
       `,
   },
   {
@@ -55,7 +67,7 @@ export default [
         <b>Client</b>: Private <br>
         <b>Size</b>: 2600 Square feet <br>
         <b>Status</b>: On Going Project <br>
-        <b>Project Concept</b>: Vertical Courtyard <br>
+        <b>Project Concept</b>: Vertical Courtyard
       `,
   },
   {
@@ -67,7 +79,7 @@ export default [
         <b>Size</b>: 1480 Square feet <br>
         <b>Status</b>: Completed <br>
         <b>Client</b>: Police Line High School, Feni <br>
-        <b>Project Concept</b>: Celebration with Joy <br>
+        <b>Project Concept</b>: Celebration with Joy
       `,
   },
   {
@@ -79,7 +91,18 @@ export default [
         <b>Client</b>: PWD Gopalganj, Bangladesh <br>
         <b>Size</b>: 4500 Square feet <br>
         <b>Status</b>: Completed <br>
-        <b>Project Concept</b>: Celebration into the nature <br>
+        <b>Project Concept</b>: Celebration into the nature
+      `,
+  },
+  {
+    image: "content/projects/Architecture/Bongabondhu Uddyan/3.jpg",
+    title: "Bongabondhu Uddyan in Kulaura",
+    details: `
+        <b>Type</b>: Cultural Complex <br>
+        <b>Location</b>: Kulaura, Moulvibazar, Bangladesh <br>
+        <b>Client</b>: Zilla Parishad, Moulvibazar, Bangladesh <br>
+        <b>Size</b>: 15500 Square feet <br>
+        <b>Status</b>: Proposed
       `,
   },
 ];

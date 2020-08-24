@@ -6,6 +6,42 @@ export default [
         title: "Patch Komlapur Darul Ulum Hafizia Qowmi Madrasa",
         specs: {
           Type: "Educational Institute",
+          Location: "Chuadanga Sadar, Chuadanga , Bangladesh",
+          Client: "First Capital University Of Bangladesh",
+          Size: "16.52 Acres ",
+          Status: "On Going Project,",
+          "Project Concept": "Freedom of Thinking",
+        },
+        images: [
+          "content/projects/Architecture/University/1.jpg",
+          "content/projects/Architecture/University/2.jpg",
+          "content/projects/Architecture/University/3.jpg",
+          "content/projects/Architecture/University/4.jpg",
+          "content/projects/Architecture/University/4.jpg",
+        ],
+      },
+      {
+        title: "New Entry Gate of Zilla Parishad CEO Bangalow",
+        specs: {
+          Type: "Gate and Boundary",
+          Location: "Moulvibazara Sadar, Moulvibazar , Bangladesh",
+          Client: "Zilla Parishad, Moulvibazar",
+          Size: "90 Feet Long",
+          Status: "Completed",
+        },
+        images: [
+          "content/projects/Architecture/Ceo Basha Gate/2.jpg",
+          "content/projects/Architecture/Ceo Basha Gate/3.jpg",
+          "content/projects/Architecture/Ceo Basha Gate/4.jpg",
+          "content/projects/Architecture/Ceo Basha Gate/5.jpg",
+          "content/projects/Architecture/Ceo Basha Gate/6.jpg",
+          "content/projects/Architecture/Ceo Basha Gate/7.jpg",
+        ],
+      },
+      {
+        title: "Patch Komlapur Darul Ulum Hafizia Qowmi Madrasa",
+        specs: {
+          Type: "Educational Institute",
           Location: "Patch Komlapur, Chuadanga Sadar, Chuadanga, Bangladesh",
           Client: "Shahed Group",
           Size: "1.6 Acres",
