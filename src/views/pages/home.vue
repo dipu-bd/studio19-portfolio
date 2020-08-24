@@ -3,8 +3,8 @@
     <Logo />
     <HeroCarousel />
     <AboutSection />
-    <CounterSection />
-    <OutProjects />
+    <!-- <CounterSection /> -->
+    <OurProjects />
   </div>
 </template>
 
@@ -15,8 +15,8 @@ export default {
     Logo: () => import("@/views/components/Logo.vue"),
     HeroCarousel: () => import("@/views/components/HeroCarousel.vue"),
     AboutSection: () => import("@/views/components/AboutSection.vue"),
-    CounterSection: () => import("@/views/components/CounterSection.vue"),
-    OutProjects: () => import("@/views/components/OutProjects.vue"),
+    // CounterSection: () => import("@/views/components/CounterSection.vue"),
+    OurProjects: () => import("@/views/components/OurProjects.vue"),
   },
 };
 </script>

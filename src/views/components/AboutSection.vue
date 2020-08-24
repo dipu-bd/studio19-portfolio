@@ -10,19 +10,24 @@
             <h4 class="section-intro__title">About our Company</h4>
             <h2 class="section-intro__subtitle">
               We've been creating <br />
-              Awesome Since 1992
+              Awesome Since 2019
             </h2>
           </div>
           <p>
-            If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur
-            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam. Eiusmod tempor incididunt ut labore et dolore magna aliqua
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua.
+            Rafayel Raj Akash founded Studio 19 ARCHITECTS in 2019. We are a private company that
+            specializes in conceiving modern, high-caliber solutions for architectural design and
+            urban planning projects. From the Office in Dhaka , we service the whole country in
+            progressive architectural design and supervision. Our team of Architects and Engineers
+            has successfully developed functional and meaningful projects all over the country.
           </p>
           <p>
-            If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur
-            adipisicing elit, sed do eiusmod tempor incididunt.
+            We defines architecture as the art and science of making sure our cities and buildings
+            fit with the way we want to live our lives. Through careful analysis of various
+            parameters from local culture and climate, ever-changing patters of contemporary life,
+            to the ebbs and flows of the global economy, We believes in the idea of
+            information-driven-design as the driving force for his design process. We have designed
+            and completed many buildings , Monuments , landscape and interior spaces throughout the
+            country.
           </p>
           <v-btn outlined dark class="mt-4">Read More</v-btn>
         </v-col>
@@ -42,7 +47,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 300px);
+  height: 100vh;
   padding: 50px 20px;
 
   .container {

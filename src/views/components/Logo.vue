@@ -20,5 +20,9 @@ export default {
   background: #f1592a;
   z-index: 10;
   padding: 10px;
+
+  @media only screen and (min-width: 900px) {
+    position: fixed;
+  }
 }
 </style>
