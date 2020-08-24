@@ -21,8 +21,8 @@ export default {
   z-index: 10;
   padding: 10px;
 
-  @media only screen and (min-width: 900px) {
-    position: fixed;
-  }
+  // @media only screen and (min-width: 900px) {
+  //   position: fixed;
+  // }
 }
 </style>
