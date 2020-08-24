@@ -33,6 +33,10 @@
         >
           <v-list-item-title class="small">{{ portfolio.type }}</v-list-item-title>
         </v-list-item>
+        <v-divider />
+        <v-list-item v-ripple="false" @click="scrollTo('footer')">
+          <v-list-item-title>Footer</v-list-item-title>
+        </v-list-item>
       </v-list>
     </nav>
   </div>

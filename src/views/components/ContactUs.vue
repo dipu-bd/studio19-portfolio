@@ -1,89 +1,27 @@
 <template>
-  <footer class="footer footer-bg">
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0 text-left">
-          <h3 class="footer__title">Top Products</h3>
-          <ul class="footer__link">
-            <li><a href="#/">managed Website</a></li>
-            <li><a href="#/">Manage Reputation</a></li>
-            <li><a href="#/">power Tools</a></li>
-            <li><a href="#/">Marketing Service</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0 text-left">
-          <h3 class="footer__title">Quick Links</h3>
-          <ul class="footer__link">
-            <li><a href="#/">Jobs</a></li>
-            <li><a href="#/">Brand Assets</a></li>
-            <li><a href="#/">Investor Relations</a></li>
-            <li><a href="#/">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0 text-left">
-          <h3 class="footer__title">Features</h3>
-          <ul class="footer__link">
-            <li><a href="#/">Jobs</a></li>
-            <li><a href="#/">Brand Assets</a></li>
-            <li><a href="#/">Investor Relations</a></li>
-            <li><a href="#/">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-4 col-lg-2 mb-4 mb-lg-0 text-left">
-          <h3 class="footer__title">Resources</h3>
-          <ul class="footer__link">
-            <li><a href="#/">Guides</a></li>
-            <li><a href="#/">Research</a></li>
-            <li><a href="#/">Experts</a></li>
-            <li><a href="#/">Agencies</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-8 col-lg-4 mb-4 mb-lg-0 text-left">
-          <h3 class="footer__title">Newsletter</h3>
-          <p>You can trust us. we only send promo offers,</p>
-          <form action="" class="form-subscribe">
-            <div class="input-group">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Your email address"
-                required=""
-              />
-              <div class="input-group-append">
-                <button class="btn-append" type="submit">
-                  <i class="lnr lnr-arrow-right"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="d-sm-flex justify-content-between footer__bottom top-border">
-        <p>
-          Copyright ©
-          <script type="text/javascript">
-            document.write(new Date().getFullYear());
-          </script>
-          2020 All rights reserved | This template is made with
-          <i class="fa fa-heart" aria-hidden="true"></i> by
-          <a href="https://colorlib.com" target="_blank">Colorlib</a>
-        </p>
-        <ul class="social-icons mt-2 mt-sm-0">
-          <li>
-            <a href="#/"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#/"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#/"><i class="fab fa-dribbble"></i></a>
-          </li>
-          <li>
-            <a href="#/"><i class="fab fa-behance"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div> -->
+  <footer id="footer" data-anchor="footer">
+    <v-container>
+      <v-row>
+        <v-col sm="4" lg="7">
+          <!--  -->
+        </v-col>
+        <v-col sm="8" lg="5" class="text-left">
+          <h2 class="footer__title">Contact Us</h2>
+          <p>
+            <b>Address</b>
+            House: 47/F (A/4), Indira Road, Dhaka- 1215
+          </p>
+          <p>
+            <b>Email</b>
+            <a href="mailto:contactus.studio19@gmail.com">contactus.studio19@gmail.com</a>
+          </p>
+          <p>
+            <b>Phone</b>
+            +8801845532719
+          </p>
+        </v-col>
+      </v-row>
+    </v-container>
   </footer>
 </template>
 
@@ -92,3 +30,42 @@ export default {
   //
 };
 </script>
+
+<style lang="scss">
+#footer {
+  padding: 80px 10px;
+  background-image: url("/images/footer-bg.webp");
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+
+  .footer__title {
+    font-size: 1.5125rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #ddd;
+    letter-spacing: 0.05rem;
+  }
+
+  p b {
+    display: block;
+    color: teal;
+    font-size: 1.152em;
+  }
+
+  p a {
+    color: aqua;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+</style>

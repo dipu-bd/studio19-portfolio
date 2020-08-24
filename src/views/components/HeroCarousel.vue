@@ -4,7 +4,7 @@
       id="hero-carousel"
       v-model="activeSlide"
       cycle
-      :interval="10000"
+      :interval="15000"
       continuous
       height="100vh"
       show-arrows-on-hover

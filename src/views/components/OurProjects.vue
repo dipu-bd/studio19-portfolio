@@ -15,7 +15,7 @@
               <v-carousel
                 cycle
                 continuous
-                :interval="6000 + i * 500"
+                :interval="10000 + i * 500"
                 :show-arrows="false"
                 hide-delimiter-background
                 delimiter-icon="mdi-minus"
