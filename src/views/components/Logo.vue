@@ -19,7 +19,8 @@ export default {
   height: 100px;
   background: #f1592a;
   z-index: 10;
-  padding: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
 
   // @media only screen and (min-width: 900px) {
   //   position: fixed;

@@ -90,8 +90,6 @@ export default {
       color: #eee;
       font-size: 12px;
       letter-spacing: 0.05rem;
-      height: 150px;
-      overflow: hidden;
       b {
         color: #c9cca1;
       }

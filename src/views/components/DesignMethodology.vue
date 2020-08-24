@@ -49,12 +49,11 @@ export default {
   .container {
     max-width: 1140px;
     margin: 100px 20px;
-    background: rgba(#ededef, 0.75);
   }
 
   .section-intro__title {
     font-size: 0.75rem;
-    color: #995c01;
+    color: #f9cc41;
     margin-bottom: 1rem;
     text-transform: uppercase;
   }
@@ -63,13 +62,13 @@ export default {
     font-family: oswald, sans-serif;
     font-weight: 300;
     font-size: 2.625rem;
-    color: #000;
+    color: #fff;
     margin-bottom: 1.5rem;
   }
 
   p {
     margin-bottom: 20px;
-    color: #1f1f1f;
+    color: #f1f1f1;
     font-size: 16px;
   }
 }
