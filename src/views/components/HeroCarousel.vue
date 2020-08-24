@@ -11,13 +11,7 @@
       hide-delimiter-background
       delimiter-icon="mdi-minus"
     >
-      <v-carousel-item
-        v-for="(slide, i) in heros"
-        :src="slide.image"
-        lazy-src="content/hero/hero1.jpg"
-        eager
-        :key="i"
-      >
+      <v-carousel-item v-for="(slide, i) in heros" :src="slide.image" eager :key="i">
         <v-card elevation="5">
           <v-card-title>{{ slide.title }}</v-card-title>
           <v-card-text v-html="slide.details" />
@@ -45,6 +39,7 @@ export default {
 <style lang="scss">
 #hero-carousel {
   position: relative;
+  min-height: 100vh;
 
   .v-card {
     position: absolute;

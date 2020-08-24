@@ -21,13 +21,7 @@
                 delimiter-icon="mdi-minus"
                 :height="project.specs ? '400px' : '60vh'"
               >
-                <v-carousel-item
-                  v-for="(src, i) in project.images"
-                  :key="i"
-                  :src="src"
-                  lazy-src="/content/hero/hero1.jpg"
-                  eager
-                >
+                <v-carousel-item v-for="(src, i) in project.images" :key="i" :src="src" eager>
                   <v-sheet class="hidden-title" v-if="!project.specs">
                     <h2 class="section-intro__subtitle small text-center pb-2">
                       {{ project.title }}

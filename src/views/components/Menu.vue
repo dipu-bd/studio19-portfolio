@@ -18,6 +18,9 @@
         <v-list-item v-ripple="false" @click="scrollTo('about')">
           <v-list-item-title>About</v-list-item-title>
         </v-list-item>
+        <v-list-item v-ripple="false" @click="scrollTo('methodology')">
+          <v-list-item-title>Methodology</v-list-item-title>
+        </v-list-item>
         <v-list-item v-ripple="false" @click="scrollTo('projects')">
           <v-list-item-title>Project</v-list-item-title>
         </v-list-item>

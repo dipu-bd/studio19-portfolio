@@ -29,7 +29,7 @@
             and completed many buildings , Monuments , landscape and interior spaces throughout the
             country.
           </p>
-          <v-btn outlined dark class="mt-4">Read More</v-btn>
+          <!-- <v-btn outlined dark class="mt-4">Read More</v-btn> -->
         </v-col>
       </v-row>
     </v-container>
@@ -47,7 +47,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   padding: 50px 20px;
 
   .container {
