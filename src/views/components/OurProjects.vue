@@ -160,6 +160,10 @@ export default {
     border-radius: 20px;
   }
 
+  .portfolio__img {
+    background: rgba(#263238, 0.1);
+  }
+
   @media screen and (min-width: 900px) {
     padding: 50px 20px;
 
