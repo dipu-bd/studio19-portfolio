@@ -19,7 +19,7 @@
                 :show-arrows="false"
                 hide-delimiter-background
                 delimiter-icon="mdi-minus"
-                height=""
+                :height="$vuetify.breakpoint.smAndDown ? '56vw' : project.specs ? '392px' : '768px'"
               >
                 <v-carousel-item
                   v-for="(src, i) in project.images"
