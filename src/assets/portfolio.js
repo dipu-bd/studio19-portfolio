@@ -110,7 +110,6 @@ export default [
           "content/projects/Architecture/Bongabondhu Uddyan/1.jpg",
           "content/projects/Architecture/Bongabondhu Uddyan/2.jpg",
           "content/projects/Architecture/Bongabondhu Uddyan/3.jpg",
-          "content/projects/Architecture/Bongabondhu Uddyan/4.jpg",
           "content/projects/Architecture/Bongabondhu Uddyan/5.jpg",
           "content/projects/Architecture/Bongabondhu Uddyan/6.jpg",
           "content/projects/Architecture/Bongabondhu Uddyan/7.jpg",
@@ -231,8 +230,6 @@ export default [
           "Project Concept": "Celebration into the nature",
         },
         images: [
-          "content/projects/Landscape/Gopalganj DC/1.jpg",
-          "content/projects/Landscape/Gopalganj DC/2.jpg",
           "content/projects/Landscape/Gopalganj DC/3.jpg",
           "content/projects/Landscape/Gopalganj DC/4.jpg",
           "content/projects/Landscape/Gopalganj DC/5.jpg",

@@ -11,7 +11,7 @@
       hide-delimiter-background
       delimiter-icon="mdi-minus"
     >
-      <v-carousel-item v-for="(slide, i) in heros" :src="slide.image" eager :key="i">
+      <v-carousel-item v-for="(slide, i) in heros" :src="getImage(slide.image)" eager :key="i">
         <v-card elevation="5">
           <v-card-title>{{ slide.title }}</v-card-title>
           <v-card-text v-html="slide.details" />
@@ -33,6 +33,11 @@ export default {
     heros,
     activeSlide: 0,
   }),
+  methods: {
+    getImage(url) {
+      return (window.cachedImages && window.cachedImages[url]) || url;
+    },
+  },
 };
 </script>
 
