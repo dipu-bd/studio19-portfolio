@@ -27,7 +27,7 @@
                   :src="src"
                   lazy-src="/content/hero/hero1.jpg"
                 >
-                  <v-sheet color="#263238" v-if="!project.specs">
+                  <v-sheet class="hidden-title" v-if="!project.specs">
                     <h2 class="section-intro__subtitle small text-center pb-2">
                       {{ project.title }}
                     </h2>
@@ -106,6 +106,14 @@ export default {
     color: #fff;
     margin-bottom: 1.5rem;
     line-height: 1.5em;
+
+    &.small {
+      font-size: 2rem;
+    }
+  }
+
+  .hidden-title {
+    background: rgba(#263238, 0.9);
   }
 
   .section-intro__subtitle.bottom-border {
