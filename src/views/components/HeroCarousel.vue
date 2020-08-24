@@ -4,7 +4,7 @@
       id="hero-carousel"
       v-model="activeSlide"
       cycle
-      :interval="15000"
+      :interval="20000"
       continuous
       height="100vh"
       show-arrows-on-hover
@@ -92,8 +92,6 @@ export default {
       letter-spacing: 0.05rem;
       height: 150px;
       overflow: hidden;
-      white-space: nowrap !important;
-      text-overflow: ellipsis;
       b {
         color: #c9cca1;
       }
