@@ -3,7 +3,7 @@
     <v-container fluid>
       <v-row align="center">
         <v-col cols="12" md="5">
-          <v-img class="section-media" src="/images/about.webp" />
+          <v-img class="section-media" src="/images/about.webp" rel="preload" />
         </v-col>
         <v-col cols="12" md="7" class="pl-xl-5">
           <div class="section-intro">

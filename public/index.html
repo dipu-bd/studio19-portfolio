@@ -11,6 +11,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/themify-icons.css">
+
+  <style>
+    body {
+      background-image: initial;
+      background-color: rgb(30, 30, 41);
+      color: rgb(161, 153, 141);
+    }
+  </style>
 </head>
 
 <body>
@@ -18,7 +26,47 @@
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
       Please enable it to continue.</strong>
   </noscript>
-  <div id="app"></div>
+  <div id="app">
+    <!-- Begin: Preloader code -->
+    <div class="preloader"></div>
+    <style>
+      @keyframes shadowSpin {
+        20% {
+          box-shadow: 40px -40px #39cccc, -40px 40px #ffdc00;
+        }
+
+        40% {
+          box-shadow: 40px 40px #39cccc, -40px -40px #ffdc00;
+        }
+
+        60% {
+          box-shadow: -40px 40px #39cccc, 40px -40px #ffdc00;
+        }
+
+        80% {
+          box-shadow: -40px -40px #39cccc, 40px 40px #ffdc00;
+        }
+
+        100% {
+          box-shadow: 40px -40px #39cccc, -40px 40px #ffdc00;
+        }
+      }
+
+      div.preloader {
+        background-color: #ff4136;
+        opacity: 0.75;
+        border-radius: 50%;
+        border: 5px solid #ff4136;
+        animation: shadowSpin 3s ease-in-out infinite;
+        position: fixed;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        width: 60px;
+        height: 60px;
+      }
+    </style>
+    <!-- End: Preloader code -->
+  </div>
   <!-- built files will be auto injected -->
 </body>
 

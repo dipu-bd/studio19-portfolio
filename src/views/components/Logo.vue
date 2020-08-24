@@ -1,6 +1,6 @@
 <template>
   <v-sheet id="logo-div" v-ripple="false" elevation="5">
-    <v-img contain src="/images/logo.png" transition="scale-transition" />
+    <v-img contain src="/images/logo.png" transition="scale-transition" rel="preload" />
   </v-sheet>
 </template>
 

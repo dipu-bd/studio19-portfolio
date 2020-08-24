@@ -26,6 +26,7 @@
                   :key="i"
                   :src="src"
                   lazy-src="/content/hero/hero1.jpg"
+                  eager
                 >
                   <v-sheet class="hidden-title" v-if="!project.specs">
                     <h2 class="section-intro__subtitle small text-center pb-2">

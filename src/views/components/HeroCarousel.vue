@@ -4,6 +4,7 @@
       id="hero-carousel"
       v-model="activeSlide"
       cycle
+      :interval="10000"
       continuous
       height="100vh"
       show-arrows-on-hover
@@ -14,6 +15,7 @@
         v-for="(slide, i) in heros"
         :src="slide.image"
         lazy-src="content/hero/hero1.jpg"
+        eager
         :key="i"
       >
         <v-card elevation="5">
