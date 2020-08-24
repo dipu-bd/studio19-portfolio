@@ -28,6 +28,7 @@
 
 <script>
 import axios from "axios";
+import heros from "@/assets/heros";
 import portfolios from "@/assets/portfolio";
 
 export default {
@@ -54,7 +55,11 @@ export default {
       window.cachedImages = {};
       this.progress = 0;
       this.loading = true;
+      setTimeout(() => (this.loading = false), 10000);
       const images = [];
+      for (const hero of heros) {
+        images.push(hero.image);
+      }
       for (const portfolio of portfolios) {
         for (const project of portfolio.projects) {
           images.push(...project.images);
