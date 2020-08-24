@@ -52,7 +52,7 @@ export default [
           "content/projects/Architecture/Madrasa/1.jpg",
           "content/projects/Architecture/Madrasa/2.jpg",
           "content/projects/Architecture/Madrasa/3.jpg",
-          "content/projects/Architecture/Madrasa/4.jpg",
+          // "content/projects/Architecture/Madrasa/4.jpg",
         ],
       },
       {
