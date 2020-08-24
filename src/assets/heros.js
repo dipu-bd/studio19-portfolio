@@ -1,5 +1,17 @@
 export default [
   {
+    image: "content/projects/Architecture/Madrasa/2.jpg",
+    title: "Patch Komlapur Madrasa",
+    details: `
+        <b>Type</b>: Educational Institute <br>
+        <b>Location</b>: Patch Komlapur, Chuadanga Sadar, Chuadanga, Bangladesh <br>
+        <b>Client</b>: Shahed Group <br>
+        <b>Size</b>: 1.6 Acres <br>
+        <b>Status</b>: Completed <br>
+        <b>Project Concept</b>: Feeling Like Home <br>
+      `,
+  },
+  {
     image: "content/projects/Architecture/Bongabondhu Uddyan/3.jpg",
     title: "Bongabondhu Uddyan in Kulaura",
     details: `
@@ -44,18 +56,6 @@ export default [
         <b>Size</b>: 2600 Square feet <br>
         <b>Status</b>: On Going Project <br>
         <b>Project Concept</b>: Vertical Courtyard <br>
-      `,
-  },
-  {
-    image: "content/projects/Architecture/Madrasa/2.jpg",
-    title: "Patch Komlapur Madrasa",
-    details: `
-        <b>Type</b>: Educational Institute <br>
-        <b>Location</b>: Patch Komlapur, Chuadanga Sadar, Chuadanga, Bangladesh <br>
-        <b>Client</b>: Shahed Group <br>
-        <b>Size</b>: 1.6 Acres <br>
-        <b>Status</b>: Completed <br>
-        <b>Project Concept</b>: Feeling Like Home <br>
       `,
   },
   {

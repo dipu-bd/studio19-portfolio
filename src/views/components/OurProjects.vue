@@ -4,13 +4,13 @@
       <div class="divider-item" v-if="i > 0">&nbsp;</div>
 
       <div class="section-intro" :data-anchor="portfolio.type">
-        <h4 class="section-intro__title">Latest Completed Projects Of</h4>
+        <!-- <h4 class="section-intro__title"></h4> -->
         <h2 class="section-intro__subtitle bottom-border">{{ portfolio.type }}</h2>
       </div>
 
       <template v-for="(project, i) in portfolio.projects">
         <v-row class="pb-md-5 mb-16 align-items-end" :class="{ 'row-reverse': i % 2 }" :key="i">
-          <v-col cols="12" :md="project.specs ? 7 : 12">
+          <v-col cols="12" :md="project.specs ? 8 : 12">
             <div class="portfolio__img">
               <v-carousel
                 cycle
@@ -19,9 +19,15 @@
                 :show-arrows="false"
                 hide-delimiter-background
                 delimiter-icon="mdi-minus"
-                :height="project.specs ? '400px' : '60vh'"
+                :height="project.specs ? '392px' : '768px'"
               >
-                <v-carousel-item v-for="(src, i) in project.images" :key="i" :src="src" eager>
+                <v-carousel-item
+                  v-for="(src, i) in project.images"
+                  :key="i"
+                  :src="src"
+                  contain
+                  eager
+                >
                   <v-sheet class="hidden-title" v-if="!project.specs">
                     <h2 class="section-intro__subtitle small text-center pb-2">
                       {{ project.title }}
@@ -31,7 +37,7 @@
               </v-carousel>
             </div>
           </v-col>
-          <v-col cols="12" md="5" class="pb-10 px-md-5" v-if="project.specs">
+          <v-col cols="12" md="4" class="pb-10 px-md-5" v-if="project.specs">
             <h4 class="section-intro__title left-border" v-if="project.specs.Type">
               {{ project.specs.Type }}
             </h4>
@@ -42,6 +48,8 @@
                 <b>{{ key }}:</b> {{ project.specs[key] }} <br />
               </span>
             </p>
+
+            <!-- <v-btn outlined class="px-10" dark @click="more">Explore Images</v-btn> -->
           </v-col>
         </v-row>
       </template>

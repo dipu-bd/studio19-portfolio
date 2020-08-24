@@ -3,27 +3,6 @@ export default [
     type: "Architectural Projects",
     projects: [
       {
-        title: "Bongabondhu Uddyan in Kulaura",
-        specs: {
-          Type: "Cultural Complex",
-          Location: "Kulaura, Moulvibazar, Bangladesh",
-          Client: "Zilla Parishad, Moulvibazar, Bangladesh",
-          Size: "15500 Square feet",
-          Status: "Proposed",
-        },
-        images: [
-          "content/projects/Architecture/Bongabondhu Uddyan/1.jpg",
-          "content/projects/Architecture/Bongabondhu Uddyan/2.jpg",
-          "content/projects/Architecture/Bongabondhu Uddyan/3.jpg",
-          "content/projects/Architecture/Bongabondhu Uddyan/4.jpg",
-          "content/projects/Architecture/Bongabondhu Uddyan/5.jpg",
-          "content/projects/Architecture/Bongabondhu Uddyan/6.jpg",
-          "content/projects/Architecture/Bongabondhu Uddyan/7.jpg",
-          "content/projects/Architecture/Bongabondhu Uddyan/8.jpg",
-          "content/projects/Architecture/Bongabondhu Uddyan/9.jpg",
-        ],
-      },
-      {
         title: "Patch Komlapur Darul Ulum Hafizia Qowmi Madrasa",
         specs: {
           Type: "Educational Institute",
@@ -80,6 +59,27 @@ export default [
           "content/projects/Architecture/Residence 1/6.jpg",
           "content/projects/Architecture/Residence 1/7.jpg",
           "content/projects/Architecture/Residence 1/8.jpg",
+        ],
+      },
+      {
+        title: "Bongabondhu Uddyan in Kulaura",
+        specs: {
+          Type: "Cultural Complex",
+          Location: "Kulaura, Moulvibazar, Bangladesh",
+          Client: "Zilla Parishad, Moulvibazar, Bangladesh",
+          Size: "15500 Square feet",
+          Status: "Proposed",
+        },
+        images: [
+          "content/projects/Architecture/Bongabondhu Uddyan/1.jpg",
+          "content/projects/Architecture/Bongabondhu Uddyan/2.jpg",
+          "content/projects/Architecture/Bongabondhu Uddyan/3.jpg",
+          "content/projects/Architecture/Bongabondhu Uddyan/4.jpg",
+          "content/projects/Architecture/Bongabondhu Uddyan/5.jpg",
+          "content/projects/Architecture/Bongabondhu Uddyan/6.jpg",
+          "content/projects/Architecture/Bongabondhu Uddyan/7.jpg",
+          "content/projects/Architecture/Bongabondhu Uddyan/8.jpg",
+          "content/projects/Architecture/Bongabondhu Uddyan/9.jpg",
         ],
       },
       {

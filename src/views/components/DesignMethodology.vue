@@ -1,6 +1,6 @@
 <template>
-  <section id="design-section" data-anchor="methodology">
-    <v-parallax height="100vh" src="/content/hero/hero1.jpg">
+  <v-parallax height="100vh" src="/images/vbanner.jpg">
+    <section id="design-section" data-anchor="methodology">
       <v-container fluid>
         <v-row align="center">
           <v-col cols="12" md="6" offset-md="3">
@@ -29,8 +29,8 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-parallax>
-  </section>
+    </section>
+  </v-parallax>
 </template>
 
 <script>
@@ -44,11 +44,12 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #343a40;
 
   .container {
     max-width: 1140px;
     margin: 100px 20px;
-    background: rgba(#ededef, 0.8);
+    background: rgba(#ededef, 0.75);
   }
 
   .section-intro__title {

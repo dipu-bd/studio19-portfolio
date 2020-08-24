@@ -16,8 +16,8 @@
           <v-card-title>{{ slide.title }}</v-card-title>
           <v-card-text v-html="slide.details" />
           <!-- <v-card-actions>
-          <v-btn outlined color="#f9cc41">Details</v-btn>
-        </v-card-actions> -->
+            <v-btn outlined color="#f9cc41">Details</v-btn>
+          </v-card-actions> -->
           <div class="special-right"></div>
         </v-card>
       </v-carousel-item>
@@ -39,43 +39,48 @@ export default {
 <style lang="scss">
 #hero-carousel {
   position: relative;
-  min-height: 100vh;
 
   .v-card {
     position: absolute;
     bottom: 100px;
-    right: 100px;
+    left: 100px;
     border-radius: 0;
     padding: 15px;
     padding-right: 35px;
-    background: transparent;
+    background: rgba(#262535, 0.5);
     text-align: center;
-    max-width: 500px;
+    max-width: 450px;
 
     @media only screen and (min-width: 600px) {
-      width: 500px;
+      width: 450px;
     }
 
     .v-card__title,
     .v-card__actions {
       justify-content: center;
-      padding: 25px;
+    }
+
+    .v-image__image {
+      background-position: right bottom !important;
     }
 
     .v-card__title {
       color: #f9cc41;
       font-family: "Oswald", sans-serif;
-      font-size: 32px;
+      font-size: 24px;
       font-weight: 300;
       letter-spacing: 0.1rem;
       white-space: pre-wrap !important;
-      padding: 25px;
     }
 
     .v-card__text {
       color: #eee;
-      font-size: 16px;
+      font-size: 12px;
       letter-spacing: 0.05rem;
+      height: 150px;
+      overflow: hidden;
+      white-space: nowrap !important;
+      text-overflow: ellipsis;
       b {
         color: #c9cca1;
       }
@@ -93,7 +98,7 @@ export default {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: rgba(#f9cc41, 0.5);
+      background-color: rgba(#f9cc41, 0.8);
       clip-path: polygon(58% 0, 65% 6%, 94% 6%, 94% 38%, 100% 43%, 100% 0);
       left: 10px;
       top: -10px;

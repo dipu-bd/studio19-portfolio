@@ -7,6 +7,7 @@
     <DesignMethodology />
     <!-- <CounterSection /> -->
     <OurProjects />
+    <ContactUs />
   </div>
 </template>
 
@@ -21,6 +22,7 @@ export default {
     DesignMethodology: () => import("@/views/components/DesignMethodology.vue"),
     // CounterSection: () => import("@/views/components/CounterSection.vue"),
     OurProjects: () => import("@/views/components/OurProjects.vue"),
+    ContactUs: () => import("@/views/components/ContactUs.vue"),
   },
 };
 </script>
