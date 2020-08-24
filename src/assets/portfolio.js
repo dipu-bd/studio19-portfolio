@@ -143,7 +143,7 @@ export default [
     type: "Interior Design",
     projects: [
       {
-        title: "Dhaka Office",
+        title: "Office Interior",
         specs: {
           Type: "Interior",
           Location: "New Palton, Dhaka, Bangladesh",
@@ -159,7 +159,7 @@ export default [
         ],
       },
       {
-        title: "Gazipur Maowna",
+        title: "Maowna Residence",
         specs: {
           Type: "Interior",
           Location: "Mawna, Gazipur , Bangladesh",
