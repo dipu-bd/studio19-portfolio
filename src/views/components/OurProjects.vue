@@ -19,7 +19,7 @@
                 :show-arrows="false"
                 hide-delimiter-background
                 delimiter-icon="mdi-minus"
-                :height="project.specs ? '392px' : '768px'"
+                height=""
               >
                 <v-carousel-item
                   v-for="(src, i) in project.images"
@@ -72,7 +72,7 @@ export default {
   color: #afafaf;
   font-size: 14px;
   min-height: 100vh;
-  padding: 50px 20px;
+  padding: 50px 0;
 
   .v-carousel__controls {
     white-space: nowrap;
@@ -88,10 +88,6 @@ export default {
     &.row-reverse {
       flex-direction: row-reverse;
     }
-  }
-
-  .portfolio__img {
-    padding: 0 20px;
   }
 
   .section-intro__title {
@@ -121,7 +117,7 @@ export default {
 
   .section-intro__subtitle.bottom-border {
     padding-bottom: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     position: relative;
   }
   .section-intro__subtitle.bottom-border:after {
@@ -157,6 +153,18 @@ export default {
     margin: 70px auto;
     background: #f9cc41;
     border-radius: 20px;
+  }
+
+  @media screen and (min-width: 900px) {
+    padding: 50px 20px;
+
+    .portfolio__img {
+      padding: 0 20px;
+    }
+
+    .section-intro__subtitle.bottom-border {
+      margin-bottom: 50px;
+    }
   }
 }
 </style>

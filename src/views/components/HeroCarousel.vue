@@ -40,18 +40,26 @@ export default {
 #hero-carousel {
   position: relative;
 
+  .v-carousel__controls {
+    white-space: nowrap;
+    padding: 0 20px;
+  }
+
   .v-card {
     position: absolute;
-    bottom: 100px;
-    left: 100px;
+    bottom: 80px;
+    left: 50px;
+    right: 30px;
+    max-width: 450px;
     border-radius: 0;
     padding: 15px;
     padding-right: 35px;
     background: rgba(#262535, 0.5);
     text-align: center;
-    max-width: 450px;
 
     @media only screen and (min-width: 600px) {
+      bottom: 100px;
+      left: 100px;
       width: 450px;
     }
 
