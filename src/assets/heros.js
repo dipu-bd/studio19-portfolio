@@ -1,6 +1,6 @@
 export default [
   {
-    image: "content/projects/Architecture/University/4.jpg",
+    image: "content/projects/Architecture/University/2.jpg",
     title: "Capital University Of Bangladesh",
     details: `
         <b>Type</b>: Educational Institute <br>
@@ -23,7 +23,7 @@ export default [
       `,
   },
   {
-    image: "content/projects/Architecture/Madrasa/2.jpg",
+    image: "content/projects/Architecture/Madrasa/1.jpg",
     title: "Patch Komlapur Madrasa",
     details: `
         <b>Type</b>: Educational Institute <br>

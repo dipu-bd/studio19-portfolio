@@ -3,7 +3,7 @@ export default [
     type: "Architectural Projects",
     projects: [
       {
-        title: "New Campus for First Capital University Of Bangladesh",
+        title: "New Campus Design for First Capital University Of Bangladesh",
         specs: {
           Type: "Educational Institute",
           Location: "Chuadanga Sadar, Chuadanga , Bangladesh",
