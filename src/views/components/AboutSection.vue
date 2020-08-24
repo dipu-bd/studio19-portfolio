@@ -1,5 +1,5 @@
 <template>
-  <section id="about-section">
+  <section id="about-section" data-anchor="about">
     <v-container fluid>
       <v-row align="center">
         <v-col cols="12" md="5">

@@ -1,9 +1,9 @@
 <template>
-  <section id="projects-section">
+  <section id="projects-section" data-anchor="projects">
     <v-container fluid v-for="(portfolio, i) in portfolios" :key="i">
       <div class="divider-item" v-if="i > 0">&nbsp;</div>
 
-      <div class="section-intro">
+      <div class="section-intro" :data-anchor="portfolio.type">
         <h4 class="section-intro__title">Latest Completed Projects Of</h4>
         <h2 class="section-intro__subtitle bottom-border">{{ portfolio.type }}</h2>
       </div>

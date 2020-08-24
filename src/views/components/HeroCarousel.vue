@@ -1,30 +1,32 @@
 <template>
-  <v-carousel
-    id="hero-carousel"
-    cycle
-    continuous
-    height="100vh"
-    show-arrows-on-hover
-    hide-delimiter-background
-    delimiter-icon="mdi-minus"
-    touch
-  >
-    <v-carousel-item
-      v-for="(slide, i) in heros"
-      :src="slide.image"
-      lazy-src="content/hero/hero1.jpg"
-      :key="i"
+  <section id="hero-section" data-anchor="home">
+    <v-carousel
+      id="hero-carousel"
+      v-model="activeSlide"
+      cycle
+      continuous
+      height="100vh"
+      show-arrows-on-hover
+      hide-delimiter-background
+      delimiter-icon="mdi-minus"
     >
-      <v-card elevation="5">
-        <v-card-title>{{ slide.title }}</v-card-title>
-        <v-card-text v-html="slide.details" />
-        <!-- <v-card-actions>
+      <v-carousel-item
+        v-for="(slide, i) in heros"
+        :src="slide.image"
+        lazy-src="content/hero/hero1.jpg"
+        :key="i"
+      >
+        <v-card elevation="5">
+          <v-card-title>{{ slide.title }}</v-card-title>
+          <v-card-text v-html="slide.details" />
+          <!-- <v-card-actions>
           <v-btn outlined color="#f9cc41">Details</v-btn>
         </v-card-actions> -->
-        <div class="special-right"></div>
-      </v-card>
-    </v-carousel-item>
-  </v-carousel>
+          <div class="special-right"></div>
+        </v-card>
+      </v-carousel-item>
+    </v-carousel>
+  </section>
 </template>
 
 <script>
@@ -33,6 +35,7 @@ import heros from "@/assets/heros";
 export default {
   data: () => ({
     heros,
+    activeSlide: 0,
   }),
 };
 </script>
