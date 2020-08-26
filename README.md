@@ -1,6 +1,6 @@
 # studio19-portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b85d4dc1-c200-4023-8ec5-4dda415c8aad/deploy-status)](https://app.netlify.com/sites/studio19/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/379e6417-39de-499c-88fe-0b5b7d786f32/deploy-status)](https://app.netlify.com/sites/studio19/deploys)
 
 ## Project setup
 
