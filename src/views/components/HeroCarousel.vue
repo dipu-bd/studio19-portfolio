@@ -11,7 +11,7 @@
       hide-delimiter-background
       delimiter-icon="mdi-minus"
     >
-      <v-carousel-item v-for="(slide, i) in heros" :src="getImage(slide.image)" eager :key="i">
+      <v-carousel-item v-for="(slide, i) in heros" :src="slide.image" eager :key="i">
         <v-card elevation="5">
           <v-card-title>{{ slide.title }}</v-card-title>
           <v-card-text v-html="slide.details" />
@@ -33,11 +33,11 @@ export default {
     heros,
     activeSlide: 0,
   }),
-  methods: {
-    getImage(url) {
-      return (window.cachedImages && window.cachedImages[url]) || url;
-    },
-  },
+  // methods: {
+  //   getImage(url) {
+  //     return (window.cachedImages && window.cachedImages[url]) || url;
+  //   },
+  // },
 };
 </script>
 
@@ -52,19 +52,19 @@ export default {
 
   .v-card {
     position: absolute;
-    bottom: 80px;
+    bottom: 70px;
     left: 50px;
-    right: 30px;
+    right: 50px;
     max-width: 450px;
     border-radius: 0;
-    padding: 15px;
-    padding-right: 35px;
-    background: rgba(#262535, 0.5);
+    background: rgba(#262535, 0.7);
     text-align: center;
+    // padding: 15px;
+    // padding-right: 35px;
 
     @media only screen and (min-width: 600px) {
-      bottom: 100px;
-      left: 100px;
+      left: auto;
+      right: 50px;
       width: 450px;
     }
 
@@ -101,50 +101,50 @@ export default {
       }
     }
 
-    div.special-right {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(#f9cc41, 0.8);
-      clip-path: polygon(58% 0, 65% 6%, 94% 6%, 94% 38%, 100% 43%, 100% 0);
-      left: 10px;
-      top: -10px;
-      z-index: 1;
-      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-    }
+    // div.special-right {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-color: rgba(#f9cc41, 0.8);
+    //   clip-path: polygon(58% 0, 65% 6%, 94% 6%, 94% 38%, 100% 43%, 100% 0);
+    //   left: 10px;
+    //   top: -10px;
+    //   z-index: 1;
+    //   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    //     0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    // }
 
-    &:before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(#262535, 0.8);
-      clip-path: polygon(58% 0, 65% 6%, 94% 6%, 94% 38%, 100% 43%, 100% 0);
-      left: -35px;
-      bottom: -28px;
-      transform: rotate(180deg);
-      z-index: 1;
-      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-    }
+    // &:before {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background-color: rgba(#262535, 0.8);
+    //   clip-path: polygon(58% 0, 65% 6%, 94% 6%, 94% 38%, 100% 43%, 100% 0);
+    //   left: -35px;
+    //   bottom: -28px;
+    //   transform: rotate(180deg);
+    //   z-index: 1;
+    //   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    //     0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    // }
 
-    &:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      clip-path: polygon(58% 0, 65% 6%, 94% 6%, 94% 38%, 100% 43%, 100% 100%, 0 100%, 0 0);
-      background: rgba(#262533, 0.8);
-      z-index: -1;
-      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-    }
+    // &:after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   top: 0;
+    //   left: 0;
+    //   clip-path: polygon(58% 0, 65% 6%, 94% 6%, 94% 38%, 100% 43%, 100% 100%, 0 100%, 0 0);
+    //   background: rgba(#262533, 0.8);
+    //   z-index: -1;
+    //   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    //     0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    // }
   }
 }
 </style>

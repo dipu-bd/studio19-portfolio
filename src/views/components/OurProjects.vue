@@ -24,7 +24,7 @@
                 <v-carousel-item
                   v-for="(src, i) in project.images"
                   :key="i"
-                  :src="getImage(src)"
+                  :src="src"
                   contain
                   eager
                 >
@@ -64,11 +64,11 @@ export default {
   data: () => ({
     portfolios,
   }),
-  methods: {
-    getImage(url) {
-      return (window.cachedImages && window.cachedImages[url]) || url;
-    },
-  },
+  // methods: {
+  //   getImage(url) {
+  //     return (window.cachedImages && window.cachedImages[url]) || url;
+  //   },
+  // },
 };
 </script>
 

@@ -52,32 +52,40 @@ export default {
   },
   methods: {
     async downloadAssets() {
-      window.cachedImages = {};
       this.progress = 0;
       this.loading = true;
       setTimeout(() => (this.loading = false), 10000);
-      const images = [];
-      for (const hero of heros) {
-        images.push(hero.image);
+      const indexedImages = {};
+      for (let i = 0; i < heros.length; ++i) {
+        indexedImages[i] = indexedImages[i] || [];
+        indexedImages[i].push(heros[i].image);
       }
       for (const portfolio of portfolios) {
         for (const project of portfolio.projects) {
-          images.push(...project.images);
+          for (let i = 0; i < project.images.length; ++i) {
+            indexedImages[i] = indexedImages[i] || [];
+            indexedImages[i].push(project.images[i]);
+          }
         }
       }
       const batchSize = 10;
-      for (let i = 0; i < images.length; i += batchSize) {
-        let finish = 0;
-        await Promise.all(
-          images.slice(i, i + batchSize).map(async url => {
-            window.cachedImages[url] = await this.downloadImage(url, 2);
-            finish++;
-            this.progress = (100 * (i + finish)) / images.length;
-          })
-        );
-        this.progress = (100 * (i + batchSize)) / images.length;
+      // console.log(Object.keys(indexedImages).length);
+      for (let j = 0; j < Object.keys(indexedImages).length; ++j) {
+        const images = indexedImages[j];
+        // console.log(images.length);
+        for (let i = 0; i < images.length; i += batchSize) {
+          let finish = 0;
+          await Promise.all(
+            images.slice(i, i + batchSize).map(async url => {
+              await this.downloadImage(url, 2);
+              finish++;
+              this.progress = (100 * (i + finish)) / images.length;
+            })
+          );
+          this.progress = (100 * (i + batchSize)) / images.length;
+        }
+        this.loading = false;
       }
-      this.loading = false;
     },
 
     async downloadImage(url, retry = 0) {
