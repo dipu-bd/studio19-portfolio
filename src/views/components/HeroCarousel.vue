@@ -1,9 +1,9 @@
 <template>
-  <section id="hero-section" data-anchor="home" v->
+  <section id="hero-section" data-anchor="home">
     <v-carousel
       id="hero-carousel"
       v-model="activeSlide"
-      cycle
+      :cycle="true"
       :interval="30000"
       continuous
       height="100vh"
@@ -12,14 +12,14 @@
       delimiter-icon="mdi-minus"
     >
       <v-carousel-item v-for="(slide, i) in heros" :src="slide.image" eager :key="i">
-        <v-sheet>
+        <v-card elevation="0">
           <v-card-title>{{ slide.title }}</v-card-title>
           <v-card-text v-html="slide.details" />
           <!-- <v-card-actions>
             <v-btn outlined color="#f9cc41">Details</v-btn>
           </v-card-actions> -->
           <div class="special-right"></div>
-        </v-sheet>
+        </v-card>
       </v-carousel-item>
     </v-carousel>
   </section>
@@ -44,27 +44,46 @@ export default {
 <style lang="scss">
 #hero-carousel {
   position: relative;
+  text-shadow: 2px 2px 8px rgba($color: #000, $alpha: 1);
 
   .v-carousel__controls {
     white-space: nowrap;
     padding: 0 20px;
   }
 
-  .v-sheet {
+  .v-image__image {
+    animation-name: scale-transtion;
+    animation-delay: 4s;
+    animation-duration: 26s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes scale-transtion {
+    0% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(1.25, 1.25);
+    }
+  }
+
+  .v-card {
     position: absolute;
     bottom: 50px;
-    left: 0;
-    right: 0;
+    left: 10px;
+    right: 10px;
     max-width: 500px;
     border-radius: 0;
-    text-align: center;
     // padding: 15px;
     // padding-right: 35px;
-    background: transparent;
+    // background: transparent;
+    background: rgba($color: #000000, $alpha: 0.1);
 
     @media only screen and (min-width: 600px) {
-      left: auto;
-      width: 500px;
+      right: auto;
+      max-width: 500px;
+      padding: 5px;
     }
 
     // div.special-right {
@@ -113,27 +132,17 @@ export default {
     // }
   }
 
-  .v-image__image {
-    animation-name: scale-transtion;
-    animation-duration: 60s;
-  }
-
-  @keyframes scale-transtion {
-    0% {
-      transform: scale(1, 1);
-    }
-    50% {
-      transform: scale(1.25, 1.25);
-    }
-    100% {
-      transform: scale(1, 1);
-    }
-  }
-
   .v-card__title,
-  .v-card__actions {
-    justify-content: center;
+  .v-card__text {
+    // align-items: flex-start;
+    text-align: left;
+    padding: 5px;
   }
+
+  // .v-card__title,
+  // .v-card__actions {
+  //   // justify-content: center;
+  // }
 
   .v-card__title {
     color: #f9cc41;
