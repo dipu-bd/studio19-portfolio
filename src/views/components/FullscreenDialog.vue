@@ -5,8 +5,8 @@
         <v-icon>mdi-overscan</v-icon>
       </v-btn>
     </template>
-    <v-card>
-      <v-toolbar dark color="primary" class="px-4">
+    <v-card color="transparent">
+      <v-toolbar dark color="transparent" class="px-4">
         <v-toolbar-title>{{ project.title }}</v-toolbar-title>
         <v-spacer />
         <v-btn icon dark @click="dialog = false">
