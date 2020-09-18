@@ -130,21 +130,26 @@ export default {
   right: 0;
   bottom: 0;
   width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: rgba(#262533, 0.9);
   backface-visibility: hidden;
   transform: translate(300px, 0);
   transition: all 0.3s;
   z-index: 12;
 
+  @media screen and (min-height: 620px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   &.visible {
+    overflow: hidden auto;
     transform: translate(0, 0);
   }
 
   .v-list-item {
-    margin: 10px;
+    margin: 0 10px;
   }
 
   .v-list-item__title {
