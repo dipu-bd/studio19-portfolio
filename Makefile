@@ -8,4 +8,10 @@ stop ::
 run ::
 	docker run -d -p 8080:80 --name portfolio --restart always portfolio
 
-server :: build stop run
+deploy :: build stop run
+
+server ::
+	ssh root@studio19.xyz -t "cd ~/projects/studio19-portfolio/ && bash"
+
+server-deploy ::
+	ssh root@studio19.xyz -t "cd ~/projects/studio19-portfolio/ && git pull origin master && make deploy"
