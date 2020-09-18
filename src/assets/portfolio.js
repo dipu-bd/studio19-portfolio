@@ -8,7 +8,7 @@ export default [
           Type: "Educational Institute",
           Location: "Chuadanga Sadar, Chuadanga , Bangladesh",
           Client: "First Capital University Of Bangladesh",
-          Size: "16.52 Acres ",
+          Size: "16.52 Acres",
           Status: "On Going Project,",
           "Project Concept": "Freedom of Thinking",
         },
