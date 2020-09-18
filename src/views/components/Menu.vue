@@ -1,6 +1,6 @@
 <template>
   <div @click="visible = !visible">
-    <v-sheet id="main-menu-button" elevation="5" v-ripple>
+    <v-sheet id="main-menu-button" v-ripple>
       <div class="menu-section">
         <div class="menu-toggle" :class="{ on: visible }">
           <div class="one"></div>
@@ -62,23 +62,23 @@ export default {
 
 <style lang="scss">
 #main-menu-button {
+  cursor: pointer;
   position: fixed;
   top: 0;
   right: 0;
-  width: 65px;
-  height: 65px;
-  background: #f1592a;
+  width: 100px;
+  height: 100px;
   z-index: 15;
-  cursor: pointer;
+  background: transparent;
   // border-bottom-left-radius: 10px;
 
   .menu-toggle {
     cursor: pointer;
-    width: 35px;
-    height: 20px;
+    width: 40px;
+    height: 30px;
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 30px;
+    right: 30px;
     z-index: 15;
   }
 
@@ -96,7 +96,7 @@ export default {
   .three {
     width: 100%;
     height: 2px;
-    background: black;
+    background: #f1592a;
     margin: 10px auto;
     backface-visibility: hidden;
     transition: all 0.6s;
