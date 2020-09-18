@@ -17,6 +17,7 @@ export default [
           "content/projects/Architecture/University/2.jpg",
           "content/projects/Architecture/University/3.jpg",
           "content/projects/Architecture/University/4.jpg",
+          "content/projects/Architecture/University/5.jpg",
         ],
       },
       {
