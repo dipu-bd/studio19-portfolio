@@ -15,8 +15,8 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 65px;
-  height: 65px;
+  width: 100px;
+  height: 100px;
   background: #f1592a;
   z-index: 10;
   padding-top: 5px;
