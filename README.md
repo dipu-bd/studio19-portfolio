@@ -1,31 +1,30 @@
 # studio19-portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/379e6417-39de-499c-88fe-0b5b7d786f32/deploy-status)](https://app.netlify.com/sites/studio19/deploys)
+> You need to do this first
 
-## Project setup
+- Right click on Windows Start menu and open "Windows PowerShell"
+- Now run these commands sequentially:
 
-```
-npm install
-```
+```sh
+> Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+> Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 
-### Compiles and hot-reloads for development
+> scoop install git nodejs-lts make
+> npm i -g yarn
 
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
+> git clone https://github.com/dipu-bd/studio19-portfolio
+> cd studio19-portfolio
+> yarn
 ```
 
-### Lints and fixes files
+Running locally:
 
+```sh
+> yarn serve
 ```
-npm run lint
+
+Deploying to server:
+
+```sh
+> make server-deploy
 ```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
