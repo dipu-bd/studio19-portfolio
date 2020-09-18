@@ -70,7 +70,7 @@ export default {
   background: #f1592a;
   z-index: 15;
   cursor: pointer;
-  border-bottom-left-radius: 10px;
+  // border-bottom-left-radius: 10px;
 
   .menu-toggle {
     cursor: pointer;

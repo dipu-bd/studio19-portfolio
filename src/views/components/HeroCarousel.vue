@@ -1,5 +1,5 @@
 <template>
-  <section id="hero-section" data-anchor="home">
+  <section id="hero-section" data-anchor="home" v->
     <v-carousel
       id="hero-carousel"
       v-model="activeSlide"
@@ -115,15 +115,18 @@ export default {
 
   .v-image__image {
     animation-name: scale-transtion;
-    animation-duration: 30s;
+    animation-duration: 60s;
   }
 
   @keyframes scale-transtion {
-    from {
+    0% {
       transform: scale(1, 1);
     }
-    to {
+    50% {
       transform: scale(1.25, 1.25);
+    }
+    100% {
+      transform: scale(1, 1);
     }
   }
 

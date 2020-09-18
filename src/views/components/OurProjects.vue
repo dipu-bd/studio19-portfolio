@@ -12,18 +12,15 @@
         <v-row class="pb-md-5 mb-16 align-items-end" :class="{ 'row-reverse': i % 2 }" :key="i">
           <template v-if="project.specs">
             <v-col cols="12" md="9">
-              <div class="portfolio__img">
+              <div class="portfolio__img" :class="{ expandable: $vuetify.breakpoint.mdAndUp }">
                 <ProjectCarousel
                   v-if="project.specs"
                   :interval="15000 + Math.random() * 5000"
                   :project="project"
                   :height="$vuetify.breakpoint.smAndDown ? '56vw' : '535px'"
-                  :class="{ 'expandable-project-carousel': $vuetify.breakpoint.mdAndUp }"
                 >
-                  <!-- <v-btn icon x-large width="80px" height="80px" class="zoom-button">
-                    <v-icon>mdi-overscan</v-icon>
-                  </v-btn> -->
                 </ProjectCarousel>
+                <FullscreenDialog :project="project" />
               </div>
             </v-col>
             <v-col cols="12" md="3" class="pb-10 px-md-5">
@@ -63,10 +60,12 @@
 <script>
 import portfolios from "@/assets/portfolio";
 import ProjectCarousel from "@/views/components/ProjectCarousel.vue";
+import FullscreenDialog from "@/views/components/FullscreenDialog.vue";
 
 export default {
   components: {
     ProjectCarousel,
+    FullscreenDialog,
   },
   data: () => ({
     portfolios,
@@ -98,24 +97,6 @@ export default {
     align-items: flex-end;
     &.row-reverse {
       flex-direction: row-reverse;
-    }
-  }
-
-  .zoom-button {
-    display: none;
-  }
-
-  .expandable-project-carousel:hover {
-    .v-responsive__content {
-      box-shadow: 0 0 20px rgb(#000, 0.75) inset;
-      // background: rgba(#000, 0.25);
-    }
-    .zoom-button {
-      display: block;
-      position: absolute;
-      top: calc(50% - 40px);
-      left: calc(50% - 40px);
-      background: radial-gradient(#000, transparent);
     }
   }
 
@@ -192,7 +173,27 @@ export default {
   }
 
   .portfolio__img {
+    position: relative;
     background: rgba(#263238, 0.1);
+  }
+
+  .zoom-button {
+    display: none;
+  }
+
+  .portfolio__img.expandable:hover {
+    .v-responsive__content {
+      box-shadow: 0 0 20px rgb(#000, 0.75) inset;
+      // background: rgba(#000, 0.25);
+    }
+    .zoom-button {
+      color: white;
+      display: block;
+      position: absolute;
+      top: calc(50% - 40px);
+      left: calc(50% - 40px);
+      background: radial-gradient(#000, transparent);
+    }
   }
 }
 </style>

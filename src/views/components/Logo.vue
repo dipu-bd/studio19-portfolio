@@ -21,7 +21,7 @@ export default {
   z-index: 10;
   padding-top: 5px;
   padding-left: 10px;
-  border-bottom-right-radius: 10px;
+  // border-bottom-right-radius: 10px;
 
   // @media only screen and (min-width: 900px) {
   //   position: fixed;
