@@ -15,12 +15,13 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   background: #f1592a;
   z-index: 10;
   padding-top: 5px;
   padding-left: 10px;
+  border-bottom-right-radius: 10px;
 
   // @media only screen and (min-width: 900px) {
   //   position: fixed;

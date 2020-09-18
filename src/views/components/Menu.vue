@@ -65,18 +65,20 @@ export default {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   background: #f1592a;
   z-index: 15;
+  cursor: pointer;
+  border-bottom-left-radius: 10px;
 
   .menu-toggle {
     cursor: pointer;
-    width: 40px;
-    height: 30px;
+    width: 35px;
+    height: 20px;
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 10px;
+    right: 15px;
     z-index: 15;
   }
 
