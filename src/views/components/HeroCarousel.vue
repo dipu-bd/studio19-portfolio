@@ -4,7 +4,7 @@
       id="hero-carousel"
       v-model="activeSlide"
       cycle
-      :interval="20000"
+      :interval="30000"
       continuous
       height="100vh"
       show-arrows-on-hover
@@ -12,14 +12,14 @@
       delimiter-icon="mdi-minus"
     >
       <v-carousel-item v-for="(slide, i) in heros" :src="slide.image" eager :key="i">
-        <v-card elevation="5">
+        <v-sheet>
           <v-card-title>{{ slide.title }}</v-card-title>
           <v-card-text v-html="slide.details" />
           <!-- <v-card-actions>
             <v-btn outlined color="#f9cc41">Details</v-btn>
           </v-card-actions> -->
           <div class="special-right"></div>
-        </v-card>
+        </v-sheet>
       </v-carousel-item>
     </v-carousel>
   </section>
@@ -50,55 +50,21 @@ export default {
     padding: 0 20px;
   }
 
-  .v-card {
+  .v-sheet {
     position: absolute;
-    bottom: 70px;
-    left: 50px;
-    right: 50px;
-    max-width: 450px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    max-width: 500px;
     border-radius: 0;
-    background: rgba(#262535, 0.7);
     text-align: center;
     // padding: 15px;
     // padding-right: 35px;
+    background: transparent;
 
     @media only screen and (min-width: 600px) {
       left: auto;
-      right: 50px;
-      width: 450px;
-    }
-
-    .v-card__title,
-    .v-card__actions {
-      justify-content: center;
-    }
-
-    .v-image__image {
-      background-position: right bottom !important;
-    }
-
-    .v-card__title {
-      color: #f9cc41;
-      font-family: "Oswald", sans-serif;
-      font-size: 24px;
-      font-weight: 300;
-      letter-spacing: 0.1rem;
-      white-space: pre-wrap !important;
-    }
-
-    .v-card__text {
-      color: #eee;
-      font-size: 12px;
-      letter-spacing: 0.05rem;
-      b {
-        color: #c9cca1;
-      }
-    }
-
-    .v-card__actions {
-      .v-btn {
-        padding: 0 32px;
-      }
+      width: 500px;
     }
 
     // div.special-right {
@@ -145,6 +111,49 @@ export default {
     //   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
     //     0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     // }
+  }
+
+  .v-image__image {
+    animation-name: scale-transtion;
+    animation-duration: 30s;
+  }
+
+  @keyframes scale-transtion {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.25, 1.25);
+    }
+  }
+
+  .v-card__title,
+  .v-card__actions {
+    justify-content: center;
+  }
+
+  .v-card__title {
+    color: #f9cc41;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    white-space: pre-wrap !important;
+  }
+
+  .v-card__text {
+    color: #eee;
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+    b {
+      color: #c9cca1;
+    }
+  }
+
+  .v-card__actions {
+    .v-btn {
+      padding: 0 32px;
+    }
   }
 }
 </style>
