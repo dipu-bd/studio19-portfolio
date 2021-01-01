@@ -1,12 +1,12 @@
 <template>
-  <section id="hero-section" data-anchor="home">
+  <section id="hero-section" data-anchor="home" v-resize="onResize">
     <v-carousel
       id="hero-carousel"
       v-model="activeSlide"
       :cycle="true"
       :interval="30000"
       continuous
-      height="100vh"
+      :height="windowSize.x * 0.6 < windowSize.y ? '60vw' : '100vh'"
       show-arrows-on-hover
       hide-delimiter-background
       delimiter-icon="mdi-minus"
@@ -32,12 +32,22 @@ export default {
   data: () => ({
     heros,
     activeSlide: 0,
+    windowSize: {
+      x: 0,
+      y: 0,
+    },
   }),
-  // methods: {
-  //   getImage(url) {
-  //     return (window.cachedImages && window.cachedImages[url]) || url;
-  //   },
-  // },
+  mounted() {
+    this.onResize();
+  },
+  methods: {
+    // getImage(url) {
+    //   return (window.cachedImages && window.cachedImages[url]) || url;
+    // },
+    onResize() {
+      this.windowSize = { x: window.innerWidth, y: window.innerHeight };
+    },
+  },
 };
 </script>
 
@@ -165,6 +175,15 @@ export default {
   .v-card__actions {
     .v-btn {
       padding: 0 32px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .v-card__title {
+      font-size: 1.25rem;
+    }
+    .v-card__text {
+      display: none;
     }
   }
 }

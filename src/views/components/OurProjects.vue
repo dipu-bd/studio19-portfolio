@@ -128,13 +128,21 @@ export default {
   .section-intro__subtitle {
     font-family: oswald, sans-serif;
     font-weight: 300;
-    font-size: 2.625rem;
+    font-size: 2rem;
     color: #fff;
     margin-bottom: 1.5rem;
     line-height: 1.5em;
 
+    @media only screen and (min-width: 600px) {
+      font-size: 2.625rem;
+    }
+
     &.small {
-      font-size: 2rem;
+      font-size: 1.6rem;
+
+      @media only screen and (min-width: 600px) {
+        font-size: 2rem;
+      }
     }
 
     &.bottom-border {

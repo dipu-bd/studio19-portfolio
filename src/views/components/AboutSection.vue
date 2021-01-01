@@ -77,9 +77,13 @@ export default {
   .section-intro__subtitle {
     font-family: oswald, sans-serif;
     font-weight: 300;
-    font-size: 2.625rem;
+    font-size: 2rem;
     color: #fff;
     margin-bottom: 1.5rem;
+
+    @media only screen and (min-width: 600px) {
+      font-size: 2.625rem;
+    }
   }
 
   p {

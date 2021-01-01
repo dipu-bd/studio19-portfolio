@@ -15,7 +15,7 @@ export default {
 <style lang="scss">
 .v-main {
   background-image: initial;
-  background-color: rgb(30, 30, 41);
-  color: rgb(161, 153, 141);
+  background-color: #242424;
+  color: rgb(171, 163, 161);
 }
 </style>
