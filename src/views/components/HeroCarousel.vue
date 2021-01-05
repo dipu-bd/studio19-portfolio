@@ -6,10 +6,11 @@
       :cycle="true"
       :interval="30000"
       continuous
-      :height="windowSize.x * 0.6 < windowSize.y ? '60vw' : '100vh'"
+      height="100vh"
       show-arrows-on-hover
       hide-delimiter-background
       delimiter-icon="mdi-minus"
+      :class="windowSize.x * 0.6 < windowSize.y ? 'slide-motion' : 'zoom-motion'"
     >
       <v-carousel-item v-for="(slide, i) in heros" :src="slide.image" eager :key="i">
         <v-card elevation="0">
@@ -45,7 +46,10 @@ export default {
     //   return (window.cachedImages && window.cachedImages[url]) || url;
     // },
     onResize() {
-      this.windowSize = { x: window.innerWidth, y: window.innerHeight };
+      this.windowSize = {
+        x: window.innerWidth,
+        y: window.innerHeight,
+      };
     },
   },
 };
@@ -61,20 +65,43 @@ export default {
     padding: 0 20px;
   }
 
-  .v-image__image {
-    animation-name: scale-transtion;
-    animation-delay: 4s;
-    animation-duration: 26s;
+  .v-image__image--cover {
+    animation-delay: 1s;
+    animation-duration: 14s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
   }
 
-  @keyframes scale-transtion {
-    0% {
-      transform: scale(1, 1);
+  &.zoom-motion {
+    .v-image__image--cover {
+      animation-name: scale-transtion;
     }
-    100% {
-      transform: scale(1.25, 1.25);
+
+    @keyframes scale-transtion {
+      from {
+        transform: scale(1, 1);
+      }
+      to {
+        transform: scale(1.25, 1.25);
+      }
+    }
+  }
+
+  &.slide-motion {
+    .v-image__image--cover {
+      animation-name: slide-transtion;
+      background-position: left center !important;
+      width: 178vh;
+    }
+
+    @keyframes slide-transtion {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(calc(-100% + 100vw));
+      }
     }
   }
 
