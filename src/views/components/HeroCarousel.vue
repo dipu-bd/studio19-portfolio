@@ -66,8 +66,8 @@ export default {
   }
 
   .v-image__image--cover {
-    animation-delay: 1s;
-    animation-duration: 14s;
+    animation-delay: 2s;
+    animation-duration: 28s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -83,7 +83,7 @@ export default {
         transform: scale(1, 1);
       }
       to {
-        transform: scale(1.25, 1.25);
+        transform: scale(1.4, 1.4);
       }
     }
   }
