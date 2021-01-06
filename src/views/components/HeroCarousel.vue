@@ -12,7 +12,7 @@
       delimiter-icon="mdi-minus"
       :class="windowSize.x * 0.6 < windowSize.y ? 'slide-motion' : 'zoom-motion'"
     >
-      <v-carousel-item v-for="(slide, i) in heros" :src="slide.image" eager :key="i">
+      <v-carousel-item v-for="(slide, i) in heros" :key="i" :src="slide.image" eager>
         <v-card elevation="0">
           <v-card-title>{{ slide.title }}</v-card-title>
           <v-card-text v-html="slide.details" />
@@ -121,7 +121,11 @@ export default {
       right: auto;
       max-width: 500px;
       padding: 5px;
-      bottom: 50px;
+      bottom: 60px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      bottom: 10px;
     }
   }
 
