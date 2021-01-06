@@ -107,7 +107,7 @@ export default {
 
   .v-card {
     position: absolute;
-    bottom: 50px;
+    bottom: 80px;
     left: 10px;
     right: 10px;
     max-width: 500px;
@@ -121,52 +121,8 @@ export default {
       right: auto;
       max-width: 500px;
       padding: 5px;
+      bottom: 50px;
     }
-
-    // div.special-right {
-    //   content: "";
-    //   display: block;
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 100%;
-    //   background-color: rgba(#f9cc41, 0.8);
-    //   clip-path: polygon(58% 0, 65% 6%, 94% 6%, 94% 38%, 100% 43%, 100% 0);
-    //   left: 10px;
-    //   top: -10px;
-    //   z-index: 1;
-    //   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-    //     0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-    // }
-
-    // &:before {
-    //   content: "";
-    //   display: block;
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 100%;
-    //   background-color: rgba(#262535, 0.8);
-    //   clip-path: polygon(58% 0, 65% 6%, 94% 6%, 94% 38%, 100% 43%, 100% 0);
-    //   left: -35px;
-    //   bottom: -28px;
-    //   transform: rotate(180deg);
-    //   z-index: 1;
-    //   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-    //     0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-    // }
-
-    // &:after {
-    //   content: "";
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 100%;
-    //   top: 0;
-    //   left: 0;
-    //   clip-path: polygon(58% 0, 65% 6%, 94% 6%, 94% 38%, 100% 43%, 100% 100%, 0 100%, 0 0);
-    //   background: rgba(#262533, 0.8);
-    //   z-index: -1;
-    //   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-    //     0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-    // }
   }
 
   .v-card__title,
@@ -202,15 +158,6 @@ export default {
   .v-card__actions {
     .v-btn {
       padding: 0 32px;
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
-    .v-card__title {
-      font-size: 1.25rem;
-    }
-    .v-card__text {
-      display: none;
     }
   }
 }
