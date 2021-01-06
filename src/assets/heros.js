@@ -1,7 +1,7 @@
 export default [
   {
     image: "content/projects/Architecture/University/2.jpg",
-    title: "Capital University Of Bangladesh",
+    title: "First Capital University Of Bangladesh",
     details: `<b>Location</b>: Chuadanga Sadar, Chuadanga, Bangladesh`,
   },
   {
