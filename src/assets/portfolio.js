@@ -2,24 +2,24 @@ export default [
   {
     type: "Architectural Projects",
     projects: [
-      {
-        title: "New Campus Design for First Capital University Of Bangladesh",
-        specs: {
-          Type: "Educational Institute",
-          Location: "Chuadanga Sadar, Chuadanga , Bangladesh",
-          Client: "First Capital University Of Bangladesh",
-          Size: "16.52 Acres",
-          Status: "On Going Project,",
-          "Project Concept": "Freedom of Thinking",
-        },
-        images: [
-          "content/projects/Architecture/University/1.jpg",
-          "content/projects/Architecture/University/2.jpg",
-          "content/projects/Architecture/University/3.jpg",
-          "content/projects/Architecture/University/4.jpg",
-          "content/projects/Architecture/University/5.jpg",
-        ],
-      },
+      // {
+      //   title: "New Campus Design for First Capital University Of Bangladesh",
+      //   specs: {
+      //     Type: "Educational Institute",
+      //     Location: "Chuadanga Sadar, Chuadanga , Bangladesh",
+      //     Client: "First Capital University Of Bangladesh",
+      //     Size: "16.52 Acres",
+      //     Status: "On Going Project,",
+      //     "Project Concept": "Freedom of Thinking",
+      //   },
+      //   images: [
+      //     "content/projects/Architecture/University/1.jpg",
+      //     "content/projects/Architecture/University/2.jpg",
+      //     "content/projects/Architecture/University/3.jpg",
+      //     "content/projects/Architecture/University/4.jpg",
+      //     "content/projects/Architecture/University/5.jpg",
+      //   ],
+      // },
       {
         title: "New Entry Gate of Zilla Parishad CEO Bangalow",
         specs: {

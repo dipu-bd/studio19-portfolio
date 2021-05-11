@@ -1,9 +1,9 @@
 export default [
-  {
-    image: "content/projects/Architecture/University/2.jpg",
-    title: "First Capital University Of Bangladesh",
-    details: `<b>Location</b>: Chuadanga Sadar, Chuadanga, Bangladesh`,
-  },
+  // {
+  //   image: "content/projects/Architecture/University/2.jpg",
+  //   title: "First Capital University Of Bangladesh",
+  //   details: `<b>Location</b>: Chuadanga Sadar, Chuadanga, Bangladesh`,
+  // },
   {
     image: "content/projects/Architecture/Ceo Basha Gate/3.jpg",
     title: "Entry Gate of Zilla Parishad CEO",
