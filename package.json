@@ -5,7 +5,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "docker:build": "docker build -t portfolio .",
+    "docker:run": "docker run -itd -p 8080:80 --name portfolio --restart unless-stopped portfolio",
+    "docker:stop": "docker stop portfolio; docker rm portfolio",
+    "docker": "npm run docker:build && npm run docker:stop && npm run docker:run"
   },
   "dependencies": {
     "axios": "^0.20.0",
